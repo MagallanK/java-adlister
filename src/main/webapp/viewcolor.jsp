@@ -12,7 +12,22 @@
 </head>
 <body>
 
-<h1>Here is your color as a background! ${color}</h1>
+<h1>Choose your color ${color}</h1>
+
+<form method="post">
+    <div>
+        <label for="color">Choose color</label>
+        <select name="color" id="color">
+            <option>Red</option>
+            <option>Green</option>
+            <option>Blue</option>
+            <option>Grey</option>
+            <option>Orange</option>
+        </select>
+    </div>
+    <br>
+    <button>Submit Color</button>
+</form>
 
 </body>
 </html>
