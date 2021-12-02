@@ -1,4 +1,6 @@
-import jdk.javadoc.internal.doclets.formats.html.markup.Text;
+
+
+import org.w3c.dom.Text;
 
 import java.io.Serializable;
 
