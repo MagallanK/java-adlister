@@ -10,8 +10,8 @@ public class PizzaServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         response.getWriter().println("<h1>Pizza World!</h1>");
-//        String name = request.getParameter("name");
-//        request.setAttribute("name", name);
-//        request.getRequestDispatcher("/pizzaForm.jsp").forward(request, response);
+        String name = request.getParameter("name");
+        request.setAttribute("name", name);
+        request.getRequestDispatcher("/pizzaForm.jsp").forward(request, response);
     }
 }
