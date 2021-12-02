@@ -9,33 +9,32 @@
 <html>
 <head>
     <title>Title</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+          integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 </head>
 <body>
-<h1>Hello, from pizza ${name}</h1>
+<h1>Hello, from pizza ${name}!</h1>
 
-<form id="size">
-<div class="form-check">
-    <input class="form-size" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-    <label class="form-size-label" for="flexRadioDefault1">
-        Large
-    </label>
-</div>
-<div class="form-check">
-    <input class="form-size" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-    <label class="form-size-label" for="flexRadioDefault2">
-        Medium
-    </label>
-</div>
-<div class="form-check">
-    <input class="form-size" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
-    <label class="form-size-label" for="flexRadioDefault3">
-        Small
-    </label>
-</div>
-</form>
-
-<form id="crust">
+<form action="/pizzaForm.jsp" method="post">
+    <div class="form-check">
+        <input class="form-size" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+        <label class="form-size-label" for="flexRadioDefault1">
+            Large
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-size" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+        <label class="form-size-label" for="flexRadioDefault2">
+            Medium
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-size" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
+        <label class="form-size-label" for="flexRadioDefault3">
+            Small
+        </label>
+    </div>
+    <br>
     <div class="form-check">
         <input class="form-check-input" type="radio" name="flexRadioDefault" id="crustRadio1">
         <label class="form-check-label" for="crustRadio1">
@@ -54,9 +53,7 @@
             Stuffed Crust
         </label>
     </div>
-</form>
-
-<form id="sauce">
+    <br>
     <div class="form-check">
         <input class="form-check-input" type="radio" name="flexRadioDefault" id="sauceRadio1">
         <label class="form-check-label" for="sauceRadio1">
@@ -75,9 +72,7 @@
             None
         </label>
     </div>
-</form>
-
-<form id="toppings">
+    <br>
     <div class="form-check">
         <input class="form-check-input" type="checkbox" name="toppingsCheckbox1" id="toppingsCheckbox1">
         <label class="form-check-label" for="toppingsCheckbox1">
@@ -96,9 +91,7 @@
             Italian Sausage
         </label>
     </div>
-</form>
-
-<form class="row g-3">
+    <br>
     <div class="col-md-6">
         <label for="inputEmail4" class="form-label">First Name</label>
         <input type="text" class="form-control" id="inputEmail4">

@@ -9,9 +9,22 @@ import java.io.IOException;
 public class PizzaServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
-        response.getWriter().println("<h1>Pizza World!</h1>");
-        String name = request.getParameter("name");
-        request.setAttribute("name", name);
+//        response.getWriter().println("<h1>Pizza World!</h1>");
+//        String name = request.getParameter("name");
+//        request.setAttribute("name", name);
         request.getRequestDispatcher("/pizzaForm.jsp").forward(request, response);
+    }
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException{
+        System.out.println(request.getParameter("crust"));
+        System.out.println(request.getParameter("size"));
+        String[] toppings = request.getParameterValues("toppings");
+        for(String topping: toppings){
+            System.out.println(topping);
+            System.out.println(" ");
+        }
+        System.out.println(" ");
+        System.out.println(request.getParameter("address"));
+
+        response.sendRedirect("/hi");
     }
 }

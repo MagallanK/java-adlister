@@ -12,5 +12,7 @@
 </head>
 <body>
 
+<h1>Here is your color as a background! ${color}</h1>
+
 </body>
 </html>
