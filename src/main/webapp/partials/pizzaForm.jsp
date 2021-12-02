@@ -9,6 +9,7 @@
 <html>
 <head>
     <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 </head>
 <body>
 <h1>${form}</h1>
@@ -37,19 +38,19 @@
 <form id="crust">
     <div class="form-check">
         <input class="form-check-input" type="radio" name="flexRadioDefault" id="crustRadio1">
-        <label class="form-check-label" for="flexRadioDefault1">
+        <label class="form-check-label" for="crustRadio1">
             Thin Crust
         </label>
     </div>
     <div class="form-check">
         <input class="form-check-input" type="radio" name="flexRadioDefault" id="crustRadio2" checked>
-        <label class="form-check-label" for="flexRadioDefault2">
+        <label class="form-check-label" for="crustRadio2">
             Hand-Tossed
         </label>
     </div>
     <div class="form-check">
         <input class="form-check-input" type="radio" name="flexRadioDefault" id="crustRadio3" checked>
-        <label class="form-check-label" for="flexRadioDefault3">
+        <label class="form-check-label" for="crustRadio3">
             Stuffed Crust
         </label>
     </div>
@@ -58,19 +59,19 @@
 <form id="sauce">
     <div class="form-check">
         <input class="form-check-input" type="radio" name="flexRadioDefault" id="sauceRadio1">
-        <label class="form-check-label" for="flexRadioDefault1">
+        <label class="form-check-label" for="sauceRadio1">
             Marinara
         </label>
     </div>
     <div class="form-check">
         <input class="form-check-input" type="radio" name="flexRadioDefault" id="sauceRadio2" checked>
-        <label class="form-check-label" for="flexRadioDefault2">
+        <label class="form-check-label" for="sauceRadio2">
             BBQ
         </label>
     </div>
     <div class="form-check">
         <input class="form-check-input" type="radio" name="flexRadioDefault" id="sauceRadio3" checked>
-        <label class="form-check-label" for="flexRadioDefault3">
+        <label class="form-check-label" for="sauceRadio3">
             None
         </label>
     </div>
