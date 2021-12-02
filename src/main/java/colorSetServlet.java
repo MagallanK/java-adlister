@@ -10,13 +10,6 @@ public class colorSetServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException{
         String colorChoice = request.getParameter("colorChoice");
         request.setAttribute("colorChoice", colorChoice);
-        if(colorChoice == Red){
-
-        }
         request.getRequestDispatcher("/colorSet.jsp").forward(request, response);
-    }
-
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException{
-
     }
 }

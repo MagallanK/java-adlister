@@ -7,17 +7,11 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-<style>
-    .body{
-        background-color: red;
-    }
-</style>
+
 <head>
     <title>Title</title>
 </head>
-<body>
-
-<h1>Here is your color as a background ${colorChoice}</h1>
+<body style="background-color: ${color}">
 
 </body>
 </html>
