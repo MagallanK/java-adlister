@@ -1,3 +1,5 @@
+//THE CLASS THAT PROVIDES ACCESS TO OUR DAOs
+
 public class DaoFactory {
     private static Ads adsDao;
 
