@@ -37,6 +37,8 @@
 <c:forEach var="ad" items="${ads}">
   <div class="ad">
     <h2>Title: ${ad.title}</h2>
+    <p>User: ${ad.id}</p>
+    <p>UserID: ${ad.userId}</p>
     <p>Description: ${ad.description}</p>
   </div>
 </c:forEach>
