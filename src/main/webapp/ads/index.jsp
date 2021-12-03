@@ -12,6 +12,23 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+  <style>
+    h1{
+      background-color: red;
+      display: flex;
+      justify-content: center;
+    }
+    h2{
+      background-color: rebeccapurple;
+      display: flex;
+      justify-content: center;
+    }
+    p{
+      background-color: forestgreen;
+      display: flex;
+      justify-content: center;
+    }
+  </style>
   <title>View Ads</title>
 </head>
 <body>
