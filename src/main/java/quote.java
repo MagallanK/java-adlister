@@ -1,5 +1,3 @@
-
-
 import org.w3c.dom.Text;
 
 import java.io.Serializable;
@@ -8,7 +6,7 @@ public class quote implements Serializable {
     private long id;
     private String authorFirstName;
     private String authorLastName;
-    private Text content;
+    private String content;
 
     public quote() {}
 
@@ -36,11 +34,11 @@ public class quote implements Serializable {
         this.authorLastName = authorLastName;
     }
 
-    public Text getContent() {
+    public String getContent() {
         return content;
     }
 
-    public void setContent(Text content) {
+    public void setContent(String content) {
         this.content = content;
     }
 }
